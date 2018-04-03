@@ -1,8 +1,8 @@
 public abstract class Entity {
-    private final int ID;
-    private int energy;
-    private final int startEnergy;
-    private XY position;
+    protected final int ID;
+    protected int energy;
+    protected final int startEnergy;
+    protected XY position;
 
     public Entity(int id, int energy, XY position) {
         ID = id;
@@ -27,6 +27,10 @@ public abstract class Entity {
 
     public void UpdateEnergy(int value){
         energy += value;
+    }
+
+    public String toString(){
+        return "Pos: " + position.X + ", " + position.Y + "; Energy: " + energy + "/" + startEnergy;
     }
 
 }

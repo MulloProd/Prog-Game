@@ -1,6 +1,10 @@
 import java.io.IOException;
 
-public class HandOperatedMasterSquirrel extends MasterSquirrel {
+public abstract class HandOperatedMasterSquirrel extends MasterSquirrel {
+
+    public HandOperatedMasterSquirrel(int id, int energy, XY position) {
+        super(id, energy, position);
+    }
 
     public static void catchOperation() throws IOException {
 

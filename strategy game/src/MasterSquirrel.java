@@ -1,14 +1,19 @@
-public class MasterSquirrel extends Entity{
+public abstract class MasterSquirrel extends Entity{
 
-    public int energie = 100;
+    public static int energie;
+
+    public MasterSquirrel(int id, int energy, XY position) {
+        super(id, 1000, position);
+    }
 
     public boolean checkSquirrel(Entity entity){
         return entity instanceof MiniSquirrel;
     }
 
-    public void setEnergie(int energie){
-        this.energie = energie;
+    public static void setEnergie(int newEnergie){
+        energie = newEnergie;
     }
+
     public int getEnergie(){
         return energie;
     }
@@ -27,6 +32,7 @@ public class MasterSquirrel extends Entity{
             }
         }
     }
+
 }
 
 

@@ -7,7 +7,7 @@ public abstract class Entity {
     public Entity(int id, int energy, XY position) {
         ID = id;
         startEnergy = energy;
-        this.energy = energy;
+        this.energy = startEnergy;
         this.position = position;
     }
 

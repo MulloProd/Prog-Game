@@ -5,6 +5,6 @@ public class GoodPlant extends Entity {
 
     @Override
     public void nextStep() {
-
+        int i = 0;
     }
 }

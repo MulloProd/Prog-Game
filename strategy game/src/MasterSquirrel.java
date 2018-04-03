@@ -1,5 +1,5 @@
 public class MasterSquirrel extends Entity{
-/*
+
     public int energie = 100;
 
     public boolean checkSquirrel(Entity entity){
@@ -26,7 +26,7 @@ public class MasterSquirrel extends Entity{
                 MiniSquirrel.setEnergie(MiniSquirrel.energie + energie);
             }
         }
-    }*/
+    }
 }
 
 

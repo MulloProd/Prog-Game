@@ -9,6 +9,7 @@ public abstract class Entity {
         startEnergy = energy;
         this.energy = startEnergy;
         this.position = position;
+        int temp = 0;
     }
 
     public abstract void nextStep();

@@ -29,14 +29,4 @@ public abstract class Entity {
         energy += value;
     }
 
-    public String toString(){
-        if (this instanceof MiniSquirrel){
-            return "MiniSquirrel";
-        }
-        else if(this instanceof MasterSquirrel){
-            return "MasterSquirrel";
-        }
-
-        return "test";
-    }
 }
